@@ -1,3 +1,12 @@
 {
-   "signedContributors": []
+  "signedContributors": [
+    {
+      "name": "colton-boi",
+      "id": 71715967,
+      "comment_id": 1411206400,
+      "created_at": "2023-01-31T23:17:45Z",
+      "repoId": 595815804,
+      "pullRequestNo": 1
+    }
+  ]
 }
