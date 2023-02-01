@@ -9,7 +9,15 @@ No contributions should contain malicious code designed to harm the user or thei
 * All scripts should be using spacing of four SPACES (NOT a tab)
 ** No spacing on empty lines
 * Seperate each function/event/trigger with a line
-* When splitting a string into multiple combined strings, spaces should be after the first string (ex: "This is a " + {string} + ".") 
+* When splitting a string into multiple combined strings, spaces should be after the first string (ex: "This is a " + {string} + ".")
+* All scripts should include comments with a description, the authors, dependencies and example usage, ex: 
+```
+# Description: Does stuff
+# Authors: TheCodingDuck
+# Dependencies: Sk-Bee (https://github.com/ShaneBeee/SkBee/releases), Skript-Reflect (https://github.com/TPGamesNL/skript-reflect/releases/)
+# Example usage: send "hi" to player << THIS IS OPTIONAL. You may also optionally add more than one example usage.
+```
+* 2 lines of spacing after information provided for the script (description, authors, dependencies, example usage, etc.)
 
 ### Naming
 * Script files should be named in `UpperCamelCase` (AKA `PascalCase`)
