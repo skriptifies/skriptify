@@ -19,6 +19,20 @@ No contributions should contain malicious code designed to harm the user or thei
 ```
 * When using multiple lines of code for an example, for all lines following the first add a \# followed by spacing until equal with the start of the line above it
 * 2 lines of spacing after information provided for the script (description, authors, dependencies, example usage, etc.)
+* Guard clauses should be used instead of nested if statements, ex:
+```
+if (statement):
+  # do stuff
+else:
+  send "statement is false"
+  
+SHOULD BE REPLACED WITH
+
+if (statement is not true):
+  send "statement is false"
+  stop
+# do stuff
+```
 
 ### Naming
 * Script files should be named in `UpperCamelCase` (AKA `PascalCase`)
