@@ -1,0 +1,23 @@
+# Description: Create a book with a certain title, author, and text on pages
+# Authors: GStudiosX
+# Dependencies: Skript-Reflect (https://github.com/TPGamesNL/skript-reflect/releases/)
+# Example Usage: give createBook("Title", "Author", ("Page 1 text" and "text on the second page!")) to player
+
+
+import:
+    org.bukkit.inventory.meta.BookMeta$Generation
+
+function getGenerationType(type: string) :: object:
+    return Generation.COPY_OF_COPY if ("copy_of_copy" and "copied_copy") contains {_type}.toLowerCase()
+    return Generation.COPY_OF_ORIGINAL if ("copy" and "copy_of_original") contains {_type}.toLowerCase()
+    return Generation.ORIGINAL
+
+function createBook(title: string, author: string, pages: strings, generationType: string = "original") :: item:
+    set {_book} to written book named {_title}
+    set {_itemMeta} to {_book}.getItemMeta()
+    {_itemMeta}.setTitle({_title})
+    {_itemMeta}.setAuthor({_author})
+    {_itemMeta}.setPages({_pages::*})
+    {_itemMeta}.setGeneration(getGenerationType({_generationType}))
+    {_book}.setItemMeta({_itemMeta})
+    return {_book}
