@@ -1,0 +1,14 @@
+# Description: Format a timespan as hh:mm:ss (hh: will be ignored if there is no hours, mm will not)
+# Authors: Jake, TheCodingDuck (AKA Colton)
+# Dependencies: None
+# Example Usage: send "%time(30 seconds)% will look like 00:30"
+
+
+function time(t: timespan) :: string:
+    set {_hours} to floor(seconds of {_t}/60/60)
+    set {_minutes} to floor(seconds of {_t}/60) - {_hours}*60
+    set {_seconds} to floor(seconds of {_t}) - {_minutes}*60 - {_hours}*60*60
+    add "%{_hours}%" to {_final::*} if {_hours} > 0
+    add "%{_minutes}%" if {_minutes} > 9, else "0%{_minutes}%" to {_final::*}
+    add "%{_seconds}%" if {_seconds} > 9, else "0%{_seconds}%" to {_final::*}
+    return (join {_final::*} by ":")
