@@ -1,0 +1,19 @@
+# Description: Format numbers using commas every 3 digits
+# Authors: "ShaneBee"
+# Dependencies: None
+# Example Usage: send "You have $%formatNumber(player's balance)%"
+
+
+function a(b: text) :: text:
+    if length of {_b} > 3:
+        return "%a(first length of {_b} - 3 characters of {_b})%,%last 3 characters of {_b}%"
+    return {_b}
+
+function formatNumber(n: object) :: text:
+    if "%{_n}%" contains ".":
+        set {_s::*} to split "%{_n}%" at "."
+        set {_n} to "%a({_s::1})%.%last 2 characters of {_s::2}%"
+        return "%{_n}%"
+    else:
+        set {_n} to a("%{_n}%")
+        return "%{_n} ? 0%"

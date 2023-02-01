@@ -1,0 +1,14 @@
+# Description: Change text from normal to sᴍᴀʟʟᴄᴀᴘs
+# Authors: "kegnh", "TheCodingDuck (AKA Colton)"
+# Dependencies: None
+# Example Usage: send "%smallCaps("Hey! This message is in small caps!")%"
+
+
+function smallCaps(text: text) :: text:
+    set {_text::*} to {_text} split at ""
+    delete {_text::%size of {_text::*}%}
+    set {_smallCaps::*} to "ᴀʙᴄᴅᴇғɢʜɪᴊᴋʟᴍɴᴏᴘǫʀsᴛᴜᴠᴡxʏᴢ" split at ""
+    loop {_text::*}:
+        set {_index} to the first index of (lowercase loop-value) in "abcdefghijklmnopqrstuvwxyz"
+        add ("%loop-value%" if {_index} is -1, else {_smallCaps::%{_index}%}) to {_output::*}
+    return join {_output::*} by ""
