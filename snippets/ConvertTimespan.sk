@@ -1,5 +1,5 @@
 # Description: Format a timespan as hh:mm:ss (hh: will be ignored if there is no hours, mm will not)
-# Authors: "Jake", "TheCodingDuck (AKA Colton)"
+# Authors: Jake, TheCodingDuck (AKA Colton)
 # Dependencies: None
 # Example Usage: send "%time(30 seconds)% will look like 00:30"
 

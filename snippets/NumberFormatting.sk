@@ -1,5 +1,5 @@
 # Description: Format numbers using commas every 3 digits
-# Authors: "ShaneBee"
+# Authors: ShaneBee
 # Dependencies: None
 # Example Usage: send "You have $%formatNumber(player's balance)%"
 

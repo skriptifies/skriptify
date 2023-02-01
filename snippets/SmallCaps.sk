@@ -1,5 +1,5 @@
 # Description: Change text from normal to sᴍᴀʟʟᴄᴀᴘs
-# Authors: "kegnh", "TheCodingDuck (AKA Colton)"
+# Authors: kegnh, TheCodingDuck (AKA Colton)
 # Dependencies: None
 # Example Usage: send "%smallCaps("Hey! This message is in small caps!")%"
 

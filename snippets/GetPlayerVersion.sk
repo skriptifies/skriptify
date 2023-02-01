@@ -1,5 +1,5 @@
 # Description: Get the version of a player
-# Authors: "Jake"
+# Authors: Jake
 # Dependencies: Skript-Reflect (https://github.com/TPGamesNL/skript-reflect/releases/), ViaVersion (https://github.com/ViaVersion/ViaVersion/releases)
 # Example Usage: send "%player's version%"
 

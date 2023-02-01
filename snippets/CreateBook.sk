@@ -1,5 +1,5 @@
 # Description: Create a book with a certain title, author, and text on pages
-# Authors: "GStudiosX"
+# Authors: GStudiosX
 # Dependencies: Skript-Reflect (https://github.com/TPGamesNL/skript-reflect/releases/)
 # Example Usage: give createBook("Title", "Author", ("Page 1 text" and "text on the second page!")) to player
 

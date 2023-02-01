@@ -1,5 +1,5 @@
 # Description: Efficiently create and paste schematics using FAWE, rather than vanilla worldedit, or structures.
-# Authors: "Boxic"
+# Authors: Boxic
 # Dependencies: Skript-Reflect (https://github.com/TPGamesNL/skript-reflect/releases/), Fast Async World Edit (https://intellectualsites.github.io/download/fawe.html)
 # Example Usage: Schematic Creation > create schematic "plugins/FastAsyncWorldEdit/schematics/%loop-index%.schem" from pos1 {_pos1} pos2 {_pos2} origin {_loc-origin}
 # Example Usage: Schematic Pasting > paste schematic "plugins/FastAsyncWorldEdit/schematics/%loop-index%.schem" at {_loc-origin} include air true include entities false
