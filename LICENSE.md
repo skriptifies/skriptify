@@ -8,7 +8,7 @@ based on the
 
 Thank you for your interest in contributing to skriptify-org's Skriptify ("We" or "Us").
 
-The purpose of this contributor agreement ("Agreement") is to clarify and document the rights granted by contributors to Us. To make this document effective, please follow the instructions at Github.
+The purpose of this contributor agreement ("Agreement") is to clarify and document the rights granted by contributors to Us. To make this document effective, please follow the instructions at GitHub.
 
 ### 0\. Preamble
 
